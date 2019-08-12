@@ -69,8 +69,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 * {
-	border:1px solid grey;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -98,7 +97,7 @@ h1, h2, h3, h4, h5 {
 	justify-content:space-evenly;
 	margin:50px;
 	border-bottom:1px solid black;
-	padding:50px;
+  padding:50px;
 
 }
 .header1{
@@ -196,11 +195,9 @@ footer {
 
 .container {
 	width:975px;
-	margin:auto;
-
-.water {
-	width:80%;
+  margin:auto;
 }
+
 .first-section {
 	display:flex;
 	flex-wrap:wrap;
@@ -256,4 +253,49 @@ footer {
 	margin:20px;
 	border-radius:5px;
 	font-size:75%;
+}
+/****************Media Queries************/
+@media screen and (max-width: 800px){
+  .navigation {
+    display:flex;
+    /* justify-content: space-around; */
+    flex-wrap:wrap-reverse;
+    margin:51px 64px;
+}
+  .logo {
+    width:32%;
+    margin:30px;
+  }
+  .navigation a {
+    margin:20px 0;
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  /* header section */
+  .header {
+    padding:0px;
+  }
+  .image1{
+    display:none;
+  }
+
+  /* top-section */
+    .top-content {
+      margin:50px 50px 10px;
+    }
+    .middle-img {
+      margin:31px 72px;
+      height:25%;
+    }
+    .bottom-content {
+      display:flex;
+      justify-content: space-between;
+      margin:2px;
+      width:95%;
+    }
+    .contact {
+      margin:40px;
+    }
+  
 }
