@@ -80,11 +80,16 @@ h1, h2, h3, h4, h5 {
 	width:80%;
 }
 
-.navigation a {
+.navigation div a {
 	text-decoration:none;
 	color:grey;
 	font-size:20px;
-	font-weight:lighter;
+  font-weight:lighter;
+  padding:20px;
+}
+.navigation div {
+  margin:20px 0;
+  display:flex;
 }
 .navigation a:hover{
 	text-decoration:underline;
@@ -266,10 +271,12 @@ footer {
     width:32%;
     margin:30px;
   }
-  .navigation a {
+  .navigation div {
     margin:20px 0;
     display:flex;
-    justify-content: space-between;
+  }
+  .navigation div a {
+    padding:15px;
   }
   
   /* header section */
@@ -298,4 +305,54 @@ footer {
       margin:40px;
     }
   
+}
+@media screen and (max-width: 500px) {
+  /* Nav bar */
+
+  .navigation {
+    display:flex;
+    flex-direction:column-reverse;
+    
+  }
+  .logo {
+      margin:0px;
+  }
+  .navigation div {
+    display:flex;  
+    flex-direction:column; 
+    border-width:100%;
+  }
+  .navigation div a {
+    border-bottom:1px solid grey;
+  }
+  .header {
+    padding:0px;
+    margin:-35px 41px;
+  }
+  .top-content {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin:55px 10px;
+  }
+  .content1 {
+    padding:20px;
+  }
+  .middle-img {
+    margin:-8px 44px;
+  }
+
+  .bottom-content {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin:55px 10px;
+    padding:0px;
+  }
+  .bc {
+    padding:20px;
+  }
+  .contact {
+    margin:-21px 10px;
+  }
 }
